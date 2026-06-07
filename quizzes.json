@@ -1,0 +1,47 @@
+[
+  {
+    "day": 1,
+    "question": "What does HTML stand for?",
+    "optionA": "Hyper Text Markup Language",
+    "optionB": "Hyper Tool Markup Language",
+    "optionC": "Home Tool Markup Language",
+    "optionD": "Hyper Transfer Markup Language",
+    "answer": "A"
+  },
+  {
+    "day": 2,
+    "question": "Which language is used for styling web pages?",
+    "optionA": "HTML",
+    "optionB": "CSS",
+    "optionC": "Python",
+    "optionD": "Java",
+    "answer": "B"
+  },
+  {
+    "day": 3,
+    "question": "Which JavaScript keyword is used to declare a variable?",
+    "optionA": "var",
+    "optionB": "define",
+    "optionC": "create",
+    "optionD": "new",
+    "answer": "A"
+  },
+  {
+    "day": 4,
+    "question": "Which database is a NoSQL database?",
+    "optionA": "MySQL",
+    "optionB": "PostgreSQL",
+    "optionC": "MongoDB",
+    "optionD": "Oracle",
+    "answer": "C"
+  },
+  {
+    "day": 5,
+    "question": "Which HTTP method is used to retrieve data from a server?",
+    "optionA": "POST",
+    "optionB": "PUT",
+    "optionC": "DELETE",
+    "optionD": "GET",
+    "answer": "D"
+  }
+]
