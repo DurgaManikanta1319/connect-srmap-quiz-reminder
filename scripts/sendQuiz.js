@@ -28,12 +28,15 @@ D) ${quiz.optionD}
 axios.post(
   `https://graph.facebook.com/v25.0/${process.env.PHONE_NUMBER_ID}/messages`,
   {
-    messaging_product: "whatsapp",
-    to: process.env.RECIPIENT_PHONE,
-    type: "text",
-    text: {
-      body: message
-    }
+   messaging_product: "whatsapp",
+to: process.env.RECIPIENT_PHONE,
+type: "template",
+template: {
+  name: "hello_world",
+  language: {
+    code: "en_US"
+  }
+}
   },
   {
     headers: {
