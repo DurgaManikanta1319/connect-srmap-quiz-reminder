@@ -26,7 +26,7 @@ D) ${quiz.optionD}
 ✅ Answer: ${quiz.answer}`;
 
 axios.post(
-  `https://graph.facebook.com/v23.0/${process.env.PHONE_NUMBER_ID}/messages`,
+  `https://graph.facebook.com/v25.0/${process.env.PHONE_NUMBER_ID}/messages`,
   {
     messaging_product: "whatsapp",
     to: process.env.RECIPIENT_PHONE,
