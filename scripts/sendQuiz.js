@@ -42,7 +42,9 @@ axios.post(
     }
   }
 )
-.then(() => {
+.then((response) => {
+  console.log("META RESPONSE:");
+  console.log(JSON.stringify(response.data, null, 2));
   console.log("Quiz sent!");
 
   current.currentDay += 1;
