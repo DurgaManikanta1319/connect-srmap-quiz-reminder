@@ -43,17 +43,14 @@ axios.post(
   }
 )
 .then((response) => {
-  console.log("META RESPONSE:");
+  console.log("================================");
+  console.log("META RESPONSE");
   console.log(JSON.stringify(response.data, null, 2));
-  console.log("Quiz sent!");
-
-  current.currentDay += 1;
-
-  fs.writeFileSync(
-    "currentDay.json",
-    JSON.stringify(current, null, 2)
-  );
+  console.log("================================");
 })
-.catch(err => {
-  console.error(err.response?.data || err.message);
+.catch((err) => {
+  console.log("================================");
+  console.log("META ERROR");
+  console.log(JSON.stringify(err.response?.data || err.message, null, 2));
+  console.log("================================");
 });
