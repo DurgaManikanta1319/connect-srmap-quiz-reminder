@@ -1,0 +1,30 @@
+name: Daily Quiz
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "30 14 * * *"
+
+jobs:
+  send-quiz:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install axios
+
+      - name: Send Quiz
+        env:
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          PHONE_NUMBER_ID: ${{ secrets.PHONE_NUMBER_ID }}
+          RECIPIENT_PHONE: ${{ secrets.RECIPIENT_PHONE }}
+        run: node scripts/sendQuiz.js
